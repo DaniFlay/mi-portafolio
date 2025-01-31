@@ -1,8 +1,12 @@
-// Modo oscuro
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+// Cambio de tema
+const toggleThemeButton = document.getElementById('toggle-theme');
+const body = document.body;
+
+toggleThemeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    toggleThemeButton.textContent = body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
 });
+
 
 // Mostrar las placas al hacer scroll
 window.addEventListener('scroll', () => {

@@ -7,101 +7,93 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Menú de navegación -->
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#cv">Mi CV</a>
-    </nav>
-
-    <!-- Botón de modo oscuro -->
-    <button id="dark-mode-toggle">Modo Oscuro</button>
-
-    <!-- Sección de Introducción -->
-    <section class="section-card" id="inicio">
+    <!-- Encabezado -->
+    <header>
         <h1>Bienvenido a mi portafolio</h1>
         <p>Soy un desarrollador autónomo con pasión por aprender y mejorar mis habilidades. Actualmente trabajo en Yntegra2 como desarrollador Java.</p>
-        <img src="mi-foto.jpg" alt="Foto de presentación">
-    </section>
+        <div class="modo">
+            <button id="toggle-theme">Modo Oscuro</button>
+            <button id="toggle-language">ES/EN</button>
+        </div>
+    </header>
 
-    <!-- Sección de Proyectos -->
-    <section class="section-card" id="proyectos">
-        <h2>Proyectos</h2>
+    <!-- Secciones -->
+    <div class="container">
 
-        <!-- Proyecto 1 -->
-        <div class="proyecto">
-            <h3>API para una web con Spring (Backend)</h3>
-            <p>Descripción: Junto a un compañero, creamos una API RESTful para una web de gestión de tareas. Utilizamos Spring Boot, Hibernate, MySQL y más tecnologías.</p>
-            <div class="tech-icons">
-                <img src="spring-icon.png" alt="Spring">
-                <img src="java-icon.png" alt="Java">
-                <img src="mysql-icon.png" alt="MySQL">
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="section-card">
+            <h2>Sobre mí</h2>
+            <p>Soy una persona autónoma, autosuficiente, pero que sabe trabajar en equipo. Siempre estoy buscando nuevos retos que me permitan mejorar mi proceso de desarrollo. He trabajado en Serbatic, donde fortalecí mis conocimientos de Java y aprendí a crear APIs con Spring. Actualmente, en Yntegra2, me encargo de la creación y mejora de plugins para el gestor documental OpenKM.</p>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="section-card">
+            <h2>Proyectos</h2>
+            <div class="proyecto">
+                <h3>API para una web con Spring (Backend)</h3>
+                <p><strong>Descripción:</strong> Junto a un compañero, desarrollamos una página web donde me encargué del backend, creando una API con Spring.</p>
+                <p><strong>Tecnologías:</strong> Spring, Java, MySQL</p>
+                <h4>Habilidades</h4>
+                <div class="tech-icons">
+                    <img src="spring-icon.png" alt="Spring">
+                    <img src="java-icon.png" alt="Java">
+                    <img src="mysql-icon.png" alt="MySQL">
+                </div>
             </div>
-        </div>
-
-        <!-- Proyecto 2 -->
-        <div class="proyecto">
-            <h3>Aplicación móvil (Android)</h3>
-            <p>Descripción: Desarrollé una app móvil similar a MyAnimeList, donde los usuarios pueden gestionar sus colecciones de anime y manga. Utilicé Kotlin y Firebase.</p>
-            <div class="tech-icons">
-                <img src="kotlin-icon.png" alt="Kotlin">
-                <img src="firebase-icon.png" alt="Firebase">
+            <div class="proyecto">
+                <h3>Gestión de Documentos en Java</h3>
+                <p><strong>Descripción:</strong> Desarrollé una aplicación para gestionar documentos en Java, organizando los datos y almacenándolos en una base de datos con eXist.</p>
+                <p><strong>Tecnologías:</strong> Java, eXist, MySQL</p>
+                <h4>Habilidades</h4>
+                <div class="tech-icons">
+                    <img src="java-icon.png" alt="Java">
+                    <img src="exist-icon.png" alt="eXist">
+                    <img src="mysql-icon.png" alt="MySQL">
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Proyecto 3 -->
-        <div class="proyecto">
-            <h3>Aplicación web con Django (Full Stack)</h3>
-            <p>Descripción: Una plataforma para gestionar tareas y proyectos en equipo. Desarrollada con Django en el backend y React en el frontend.</p>
-            <div class="tech-icons">
-                <img src="django-icon.png" alt="Django">
-                <img src="react-icon.png" alt="React">
-                <img src="python-icon.png" alt="Python">
+        <!-- Habilidades -->
+        <section id="habilidades" class="section-card">
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilidad">
+                <h3>Backend</h3>
+                <div class="tech-icons">
+                    <img src="java-icon.png" alt="Java">
+                    <img src="spring-icon.png" alt="Spring">
+                    <img src="hibernate-icon.png" alt="Hibernate">
+                    <img src="mysql-icon.png" alt="MySQL">
+                </div>
             </div>
-        </div>
+            <div class="habilidad">
+                <h3>Frontend</h3>
+                <div class="tech-icons">
+                    <img src="html-icon.png" alt="HTML">
+                    <img src="css-icon.png" alt="CSS">
+                    <img src="js-icon.png" alt="JavaScript">
+                    <img src="react-icon.png" alt="React">
+                </div>
+            </div>
+            <div class="habilidad">
+                <h3>Bases de Datos</h3>
+                <div class="tech-icons">
+                    <img src="mysql-icon.png" alt="MySQL">
+                    <img src="sqlite-icon.png" alt="SQLite">
+                    <img src="exist-icon.png" alt="eXist">
+                </div>
+            </div>
+            <div class="habilidad">
+                <h3>Frameworks</h3>
+                <div class="tech-icons">
+                    <img src="spring-icon.png" alt="Spring">
+                    <img src="django-icon.png" alt="Django">
+                </div>
+            </div>
+        </section>
 
-        <!-- Más proyectos pueden añadirse aquí -->
-    </section>
-
-    <!-- Sección de CV -->
-    <section class="section-card" id="cv">
-        <h2>Mi CV</h2>
-        <a href="cv.pdf" target="_blank">Descargar CV</a>
-    </section>
-
-    <!-- Sección de Habilidades -->
-    <section class="section-card" id="habilidades">
-        <h2>Habilidades Técnicas</h2>
-        
-        <!-- Backend -->
-        <div class="habilidad">
-            <img src="backend-icon.png" alt="Backend">
-            <p>Backend</p>
-        </div>
-        
-        <!-- Frontend -->
-        <div class="habilidad">
-            <img src="frontend-icon.png" alt="Frontend">
-            <p>Frontend</p>
-        </div>
-        
-        <!-- Bases de Datos -->
-        <div class="habilidad">
-            <img src="db-icon.png" alt="Bases de Datos">
-            <p>Bases de Datos</p>
-        </div>
-        
-        <!-- Frameworks -->
-        <div class="habilidad">
-            <img src="frameworks-icon.png" alt="Frameworks">
-            <p>Frameworks</p>
-        </div>
-
-        <!-- Más habilidades pueden añadirse aquí -->
-    </section>
-
-    <!-- Script para el modo oscuro y la animación de las placas -->
-    <script src="scripts.js"></script>
-</body>
-</html>
+        <!-- Contacto -->
+        <section id="contacto" class="section-card">
+            <h2>Contacto</h2>
+            <p><strong>Email:</strong> <a href="mailto:superdemix97@gmail.com">superdemix97@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/DaniFlay" target="_blank">Mi GitHub</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-seregin
