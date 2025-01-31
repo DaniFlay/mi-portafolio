@@ -7,93 +7,70 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado -->
+    <!-- Menú de navegación -->
     <header>
-        <h1>Bienvenido a mi portafolio</h1>
-        <p>Soy un desarrollador autónomo con pasión por aprender y mejorar mis habilidades. Actualmente trabajo en Yntegra2 como desarrollador Java.</p>
-        <div class="modo">
-            <button id="toggle-theme">Modo Oscuro</button>
-            <button id="toggle-language">ES/EN</button>
-        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#cv">CV</a>
+        </nav>
     </header>
 
-    <!-- Secciones -->
     <div class="container">
-
-        <!-- Sobre mí -->
-        <section id="sobre-mi" class="section-card">
-            <h2>Sobre mí</h2>
-            <p>Soy una persona autónoma, autosuficiente, pero que sabe trabajar en equipo. Siempre estoy buscando nuevos retos que me permitan mejorar mi proceso de desarrollo. He trabajado en Serbatic, donde fortalecí mis conocimientos de Java y aprendí a crear APIs con Spring. Actualmente, en Yntegra2, me encargo de la creación y mejora de plugins para el gestor documental OpenKM.</p>
+        <!-- Placa de Presentación -->
+        <section class="section-card">
+            <h2>Mi Presentación</h2>
+            <p>Hola, soy [Tu Nombre], un desarrollador apasionado por la tecnología y la programación...</p>
         </section>
 
-        <!-- Proyectos -->
-        <section id="proyectos" class="section-card">
+        <!-- Placa de Proyectos -->
+        <section class="section-card" id="proyectos">
             <h2>Proyectos</h2>
             <div class="proyecto">
-                <h3>API para una web con Spring (Backend)</h3>
-                <p><strong>Descripción:</strong> Junto a un compañero, desarrollamos una página web donde me encargué del backend, creando una API con Spring.</p>
-                <p><strong>Tecnologías:</strong> Spring, Java, MySQL</p>
-                <h4>Habilidades</h4>
+                <h3>Proyecto 1</h3>
+                <p>Descripción del Proyecto 1...</p>
                 <div class="tech-icons">
-                    <img src="spring-icon.png" alt="Spring">
-                    <img src="java-icon.png" alt="Java">
-                    <img src="mysql-icon.png" alt="MySQL">
+                    <img src="tech-icon1.png" alt="Icono 1">
+                    <img src="tech-icon2.png" alt="Icono 2">
+                    <!-- Otros iconos -->
                 </div>
             </div>
-            <div class="proyecto">
-                <h3>Gestión de Documentos en Java</h3>
-                <p><strong>Descripción:</strong> Desarrollé una aplicación para gestionar documentos en Java, organizando los datos y almacenándolos en una base de datos con eXist.</p>
-                <p><strong>Tecnologías:</strong> Java, eXist, MySQL</p>
-                <h4>Habilidades</h4>
-                <div class="tech-icons">
-                    <img src="java-icon.png" alt="Java">
-                    <img src="exist-icon.png" alt="eXist">
-                    <img src="mysql-icon.png" alt="MySQL">
-                </div>
-            </div>
+            <!-- Otros proyectos -->
         </section>
 
-        <!-- Habilidades -->
-        <section id="habilidades" class="section-card">
-            <h2>Habilidades Técnicas</h2>
-            <div class="habilidad">
+        <!-- Placa de Habilidades -->
+        <section class="section-card">
+            <h2>Habilidades</h2>
+            <!-- Placas de habilidades -->
+            <div class="habilidades">
                 <h3>Backend</h3>
                 <div class="tech-icons">
-                    <img src="java-icon.png" alt="Java">
-                    <img src="spring-icon.png" alt="Spring">
-                    <img src="hibernate-icon.png" alt="Hibernate">
-                    <img src="mysql-icon.png" alt="MySQL">
+                    <img src="tech-icon-backend1.png" alt="Icono Backend 1">
+                    <img src="tech-icon-backend2.png" alt="Icono Backend 2">
+                    <!-- Otros iconos -->
                 </div>
             </div>
-            <div class="habilidad">
+            <div class="habilidades">
                 <h3>Frontend</h3>
                 <div class="tech-icons">
-                    <img src="html-icon.png" alt="HTML">
-                    <img src="css-icon.png" alt="CSS">
-                    <img src="js-icon.png" alt="JavaScript">
-                    <img src="react-icon.png" alt="React">
+                    <img src="tech-icon-frontend1.png" alt="Icono Frontend 1">
+                    <img src="tech-icon-frontend2.png" alt="Icono Frontend 2">
+                    <!-- Otros iconos -->
                 </div>
             </div>
-            <div class="habilidad">
-                <h3>Bases de Datos</h3>
-                <div class="tech-icons">
-                    <img src="mysql-icon.png" alt="MySQL">
-                    <img src="sqlite-icon.png" alt="SQLite">
-                    <img src="exist-icon.png" alt="eXist">
-                </div>
-            </div>
-            <div class="habilidad">
-                <h3>Frameworks</h3>
-                <div class="tech-icons">
-                    <img src="spring-icon.png" alt="Spring">
-                    <img src="django-icon.png" alt="Django">
-                </div>
-            </div>
+            <!-- Otras habilidades -->
         </section>
 
-        <!-- Contacto -->
-        <section id="contacto" class="section-card">
-            <h2>Contacto</h2>
-            <p><strong>Email:</strong> <a href="mailto:superdemix97@gmail.com">superdemix97@gmail.com</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/DaniFlay" target="_blank">Mi GitHub</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-seregin
+        <!-- Placa de CV -->
+        <section class="section-card" id="cv">
+            <h2>Mi CV</h2>
+            <p>Descargar mi CV: <a href="mi-cv.pdf" target="_blank">Descargar PDF</a></p>
+        </section>
+    </div>
+
+    <!-- Botón de Modo Oscuro -->
+    <button id="toggleDarkMode">Modo Oscuro</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
