@@ -22,6 +22,25 @@ h1, h2, h3 {
     color: #222;
 }
 
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #333;
+}
+
+body.dark-mode .section-card {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode .tech-icons img {
+    filter: invert(1);
+}
+
 /* Encabezado */
 header {
     background-color: #333;
@@ -48,7 +67,7 @@ nav a {
     padding: 10px;
 }
 
-/* Placas */
+/* Sección de Placas */
 .section-card {
     background-color: white;
     margin: 80px 0;
@@ -67,65 +86,43 @@ nav a {
     transform: translateY(0);
 }
 
-/* Proyectos */
-.proyecto {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+/* Habilidades */
+.habilidad {
+    margin: 20px 0;
 }
 
-.proyecto:last-child {
-    border-bottom: none;
-}
-
-.proyecto a {
-    display: inline-block;
-    margin-top: 10px;
-    background: #007BFF;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.proyecto a:hover {
-    background: #0056b3;
+.habilidad h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .tech-icons {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 10px;
+    justify-content: center;
 }
 
 .tech-icons img {
     width: 40px;
     height: 40px;
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .tech-icons img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2) rotate(15deg);
 }
 
-/* Modo oscuro */
-.dark-mode {
-    background-color: #222;
+/* Modo Oscuro */
+.dark-mode button {
+    background-color: #444;
     color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-/* Animaciones para mostrar las placas al hacer scroll */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.section-card.animate {
-    animation: fadeInUp 0.6s ease-out forwards;
+.dark-mode button:hover {
+    background-color: #333;
 }

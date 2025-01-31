@@ -7,70 +7,101 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Menú de navegación -->
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#cv">CV</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#cv">Mi CV</a>
+    </nav>
 
-    <div class="container">
-        <!-- Placa de Presentación -->
-        <section class="section-card">
-            <h2>Mi Presentación</h2>
-            <p>Hola, soy [Tu Nombre], un desarrollador apasionado por la tecnología y la programación...</p>
-        </section>
+    <!-- Botón de modo oscuro -->
+    <button id="dark-mode-toggle">Modo Oscuro</button>
 
-        <!-- Placa de Proyectos -->
-        <section class="section-card" id="proyectos">
-            <h2>Proyectos</h2>
-            <div class="proyecto">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del Proyecto 1...</p>
-                <div class="tech-icons">
-                    <img src="tech-icon1.png" alt="Icono 1">
-                    <img src="tech-icon2.png" alt="Icono 2">
-                    <!-- Otros iconos -->
-                </div>
+    <!-- Sección de Introducción -->
+    <section class="section-card" id="inicio">
+        <h1>Bienvenido a mi portafolio</h1>
+        <p>Soy un desarrollador autónomo con pasión por aprender y mejorar mis habilidades. Actualmente trabajo en Yntegra2 como desarrollador Java.</p>
+        <img src="mi-foto.jpg" alt="Foto de presentación">
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="section-card" id="proyectos">
+        <h2>Proyectos</h2>
+
+        <!-- Proyecto 1 -->
+        <div class="proyecto">
+            <h3>API para una web con Spring (Backend)</h3>
+            <p>Descripción: Junto a un compañero, creamos una API RESTful para una web de gestión de tareas. Utilizamos Spring Boot, Hibernate, MySQL y más tecnologías.</p>
+            <div class="tech-icons">
+                <img src="spring-icon.png" alt="Spring">
+                <img src="java-icon.png" alt="Java">
+                <img src="mysql-icon.png" alt="MySQL">
             </div>
-            <!-- Otros proyectos -->
-        </section>
+        </div>
 
-        <!-- Placa de Habilidades -->
-        <section class="section-card">
-            <h2>Habilidades</h2>
-            <!-- Placas de habilidades -->
-            <div class="habilidades">
-                <h3>Backend</h3>
-                <div class="tech-icons">
-                    <img src="tech-icon-backend1.png" alt="Icono Backend 1">
-                    <img src="tech-icon-backend2.png" alt="Icono Backend 2">
-                    <!-- Otros iconos -->
-                </div>
+        <!-- Proyecto 2 -->
+        <div class="proyecto">
+            <h3>Aplicación móvil (Android)</h3>
+            <p>Descripción: Desarrollé una app móvil similar a MyAnimeList, donde los usuarios pueden gestionar sus colecciones de anime y manga. Utilicé Kotlin y Firebase.</p>
+            <div class="tech-icons">
+                <img src="kotlin-icon.png" alt="Kotlin">
+                <img src="firebase-icon.png" alt="Firebase">
             </div>
-            <div class="habilidades">
-                <h3>Frontend</h3>
-                <div class="tech-icons">
-                    <img src="tech-icon-frontend1.png" alt="Icono Frontend 1">
-                    <img src="tech-icon-frontend2.png" alt="Icono Frontend 2">
-                    <!-- Otros iconos -->
-                </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="proyecto">
+            <h3>Aplicación web con Django (Full Stack)</h3>
+            <p>Descripción: Una plataforma para gestionar tareas y proyectos en equipo. Desarrollada con Django en el backend y React en el frontend.</p>
+            <div class="tech-icons">
+                <img src="django-icon.png" alt="Django">
+                <img src="react-icon.png" alt="React">
+                <img src="python-icon.png" alt="Python">
             </div>
-            <!-- Otras habilidades -->
-        </section>
+        </div>
 
-        <!-- Placa de CV -->
-        <section class="section-card" id="cv">
-            <h2>Mi CV</h2>
-            <p>Descargar mi CV: <a href="mi-cv.pdf" target="_blank">Descargar PDF</a></p>
-        </section>
-    </div>
+        <!-- Más proyectos pueden añadirse aquí -->
+    </section>
 
-    <!-- Botón de Modo Oscuro -->
-    <button id="toggleDarkMode">Modo Oscuro</button>
+    <!-- Sección de CV -->
+    <section class="section-card" id="cv">
+        <h2>Mi CV</h2>
+        <a href="cv.pdf" target="_blank">Descargar CV</a>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Sección de Habilidades -->
+    <section class="section-card" id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        
+        <!-- Backend -->
+        <div class="habilidad">
+            <img src="backend-icon.png" alt="Backend">
+            <p>Backend</p>
+        </div>
+        
+        <!-- Frontend -->
+        <div class="habilidad">
+            <img src="frontend-icon.png" alt="Frontend">
+            <p>Frontend</p>
+        </div>
+        
+        <!-- Bases de Datos -->
+        <div class="habilidad">
+            <img src="db-icon.png" alt="Bases de Datos">
+            <p>Bases de Datos</p>
+        </div>
+        
+        <!-- Frameworks -->
+        <div class="habilidad">
+            <img src="frameworks-icon.png" alt="Frameworks">
+            <p>Frameworks</p>
+        </div>
+
+        <!-- Más habilidades pueden añadirse aquí -->
+    </section>
+
+    <!-- Script para el modo oscuro y la animación de las placas -->
+    <script src="scripts.js"></script>
 </body>
 </html>
