@@ -4,75 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Sección de Introducción -->
     <header>
-        <h1>Daniel Seregin Kozlov - Desarrollador Software</h1>
-        <nav>
-            <ul>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Bienvenido a mi portafolio</h1>
+        <p>Soy un desarrollador autónomo con pasión por aprender y mejorar mis habilidades. Actualmente trabajo en Yntegra2 como desarrollador Java.</p>
     </header>
 
-    <section id="proyectos">
-        <h2>Mis Proyectos</h2>
-        <div class="proyecto">
-            <h3>Animanga Universe - Aplicación Android</h3>
-            <p>Una aplicación para gestionar colecciones de anime, similar a MyAnimeList. Permite agregar, clasificar y calificar anime con una interfaz amigable. Tiene un buscador para poder buscar y calificar las obras ya vistas o descubrir obras nuveas. También tiene un foro para poder compartir opiniones y debatir sobre las obras con la gente de la comunidad</p>
-            <p><strong>Tecnologías:</strong> Java, Android Studio</p>
-            <a href="https://github.com/DaniFlay/Animanga_Universe" target="_blank">Ver en GitHub</a>
-            <img src="ruta/a/imagen.jpg" alt="Captura de pantalla de la app" />
-        </div>
-        <div class="proyecto">
-            <h3>Aniuniverse - Proyecto Web</h3>
-            <p>Una aplicación web desarrollada con Django que permite a los usuarios guardar su progreso de las obras (manga o anime), calificar las obras y buscar las obras en un buscador muy completo.</p>
-            <p><strong>Tecnologías:</strong> Django, Python, HTML, CSS, JavaScript</p>
-            <a href="https://github.com/DaniFlay/FinalWebProject" target="_blank">Ver en GitHub</a>
-            <img src="ruta/a/imagen.jpg" alt="Captura de pantalla del proyecto web" />
-        </div>
+    <!-- Sobre mí -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy una persona autónoma, autosuficiente, pero que sabe trabajar en equipo. Siempre estoy buscando nuevos retos que me permitan mejorar mi proceso de desarrollo. He trabajado en Serbatic, donde fortalecí mis conocimientos de Java y aprendí a crear APIs con Spring. Actualmente, en Yntegra2, me encargo de la creación y mejora de plugins para el gestor documental OpenKM.</p>
     </section>
 
+   <!-- Proyectos -->
+<section id="proyectos">
+    <h2>Proyectos</h2>
+
+    <div class="proyecto">
+        <h3>API para una web con Spring (Backend)</h3>
+        <p><strong>Descripción:</strong> Junto a un compañero, desarrollamos una página web donde me encargué del backend, creando una API con Spring.</p>
+        <p><strong>Tecnologías:</strong> Spring, Java, MySQL</p>
+        <a href="https://github.com/DaniFlay/ONG" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <div class="proyecto">
+        <h3>Gestión de Documentos en Java</h3>
+        <p><strong>Descripción:</strong> Desarrollé una aplicación para gestionar documentos en Java, organizando los datos y almacenándolos en una base de datos con eXist.</p>
+        <p><strong>Tecnologías:</strong> Java, eXist, MySQL</p>
+        <a href="https://github.com/DaniFlay/OrganizacionArchivos" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <div class="proyecto">
+        <h3>Hibernate y eXist</h3>
+        <p><strong>Descripción:</strong> Otro de los proyectos realizados para una base de datos, utilizando Hibernate, y eXist.</p>
+        <p><strong>Tecnologías:</strong> Java, Hibernate, eXist, HQL</p>
+        <a href="https://github.com/DaniFlay/HibernateYeXist" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <!-- Proyecto Grande 1: Aplicación Android -->
+    <div class="proyecto">
+        <h3>Aplicación Android Similar a MyAnimeList</h3>
+        <p><strong>Descripción:</strong> Desarrollé una aplicación Android para gestionar colecciones de anime, similar a MyAnimeList. Los usuarios pueden añadir series, realizar seguimientos y ver detalles de cada una. El sistema permite la sincronización con bases de datos para almacenar las preferencias del usuario. También permite buscar las obras y conocer obras nuevas con un buscador, y existen foros donde los usuarios pueden dar su opinión y debatir sobre las obras con la comunidad</p>
+        <p><strong>Tecnologías:</strong> Java, Android SDK, Firebase</p>
+        <a href="https://github.com/DaniFlay/Animanga_Universe" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <!-- Proyecto Grande 2: Proyecto Web con Python, Django y JavaScript -->
+    <div class="proyecto">
+        <h3>Proyecto Web Grande con Django</h3>
+        <p><strong>Descripción:</strong> Desarrollé una plataforma web para gestionar información específica, utilizando Python y Django en el backend, y JavaScript en el frontend. Este proyecto es similar a MyAnimeList o MyAnimePlanet, las versiones web. Los usuarios pueden hacer un seguimiento de las obras, y utilizar un buscador para todos los tipos de búsqueda</p>
+        <p><strong>Tecnologías:</strong> Python, Django, JavaScript, HTML, CSS, MySQL</p>
+        <a href="https://github.com/DaniFlay/FinalWebProject" target="_blank">Ver en GitHub</a>
+    </div>
+
+</section>
+
+
+    <!-- Habilidades -->
     <section id="habilidades">
         <h2>Habilidades Técnicas</h2>
-        <div class="categoria">
-            <h3>Lenguajes</h3>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-        <div class="categoria">
-            <h3>Frameworks</h3>
-            <ul>
-                <li>Spring Boot</li>
-                <li>Django</li>
-            </ul>
-        </div>
-        <div class="categoria">
-            <h3>Herramientas</h3>
-            <ul>
-                <li>Git</li>
-                <li>Android Studio</li>
-                <li>Postman</li>
-            </ul>
-        </div>
+        <p><strong>Lenguajes:</strong> Java, Python, JavaScript</p>
+        <p><strong>Frameworks:</strong> Spring, Hibernate, Django</p>
+        <p><strong>Bases de datos:</strong> MySQL, SQLite, HQL</p>
+        <p><strong>Herramientas:</strong> Git, Android Studio, Postman</p>
+
+        <h2>Habilidades Blandas</h2>
+        <p>Soy una persona persistente y comprometida con mis objetivos. Siempre que me propongo algo, lo consigo, y soy capaz de trabajar de forma autónoma y en equipo, priorizando siempre el trabajo.</p>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Interesado en colaborar o discutir oportunidades? ¡No dudes en contactarme!</p>
+    <!-- Cursos y Certificaciones -->
+    <section id="cursos">
+        <h2>Cursos y Certificaciones</h2>
         <ul>
-            <li>Email: <a href="mailto:superdemix97@gmail.com">superdemix97@gmail.com/a></li>
-            <li><a href="https://github.com/DaniFlay" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/daniel-seregin-kozlov-062288204/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://courses.edx.org/certificates/a97b2d5b925142fcb5187a413bccbaad" target="_blank">CS50 Introduction to Computer Science</a></li>
+            <li><a href="https://courses.edx.org/certificates/4a8a61263b66428fade8ded9a6fe7d91?_gl=1*1kdvazl*_gcl_au*MTUzNjEzMTczMy4xNzI1Mzc5Mjcy*_ga*MTU1MzUxNzM5MS4xNzE3NTk4NDU2*_ga_D3KS4KMDT0*MTcyNTg4NTg5OS41My4xLjE3MjU4ODYwNzQuNjAuMC4w" target="_blank">CS50 Web Programming with Python y JavaScript</a></li>
+            <li><a href="https://certificates.cs50.io/0b69b8ad-99a5-4d17-a267-2090519a6fba.pdf?size=letter" target="_blank">CS50 Introduction to Databases with SQL</a></li>
+            <li><a href="https://certificates.cs50.io/e554acc3-23eb-43fb-a48b-85db557f60af.pdf?size=letter" target="_blank">CS50 Introduction to Artificial Intelligence with Python</a></li>
+            <li><a href="https://www.netacad.com/certificates?issuanceId=7178673d-05e2-42a6-9c2d-6f3894116a94" target="_blank">Cisco's Introduction to Cybersecurity</a></li>
         </ul>
     </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Email:</strong> <a href="mailto:superdemix97@gmail.com.com">superdemix97@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/DaniFlay" target="_blank">TuGitHub</a></p>
+        <p><strong>LinkedIn:</strong> <a href=https://www.linkedin.com/in/daniel-seregin-kozlov-062288204/" target="_blank">TuLinkedIn</a></p>
+        <p><strong>Ubicación:</strong> Valladolid, España (Disponible para trabajo remoto o presencial)</p>
+    </section>
+
 </body>
 </html>
-
