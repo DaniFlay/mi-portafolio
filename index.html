@@ -8,94 +8,100 @@
 </head>
 <body>
 
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#cv">Mi CV</a>
+    </nav>
+
+    <!-- Botón de modo oscuro -->
+    <button id="dark-mode-toggle">Modo Oscuro</button>
+
     <!-- Sección de Introducción -->
-    <header>
+    <section class="section-card" id="inicio">
         <h1>Bienvenido a mi portafolio</h1>
         <p>Soy un desarrollador autónomo con pasión por aprender y mejorar mis habilidades. Actualmente trabajo en Yntegra2 como desarrollador Java.</p>
-    </header>
-
-    <!-- Sobre mí -->
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Soy una persona autónoma, autosuficiente, pero que sabe trabajar en equipo. Siempre estoy buscando nuevos retos que me permitan mejorar mi proceso de desarrollo. He trabajado en Serbatic, donde fortalecí mis conocimientos de Java y aprendí a crear APIs con Spring. Actualmente, en Yntegra2, me encargo de la creación y mejora de plugins para el gestor documental OpenKM.</p>
+        <img src="mi-foto.jpg" alt="Foto de presentación">
     </section>
 
-   <!-- Proyectos -->
-<section id="proyectos">
-    <h2>Proyectos</h2>
+    <!-- Sección de Proyectos -->
+    <section class="section-card" id="proyectos">
+        <h2>Proyectos</h2>
 
-    <div class="proyecto">
-        <h3>API para una web con Spring (Backend)</h3>
-        <p><strong>Descripción:</strong> Junto a un compañero, desarrollamos una página web donde me encargué del backend, creando una API con Spring.</p>
-        <p><strong>Tecnologías:</strong> Spring, Java, MySQL</p>
-        <a href="https://github.com/DaniFlay/ONG" target="_blank">Ver en GitHub</a>
-    </div>
+        <!-- Proyecto 1 -->
+        <div class="proyecto">
+            <h3>API para una web con Spring (Backend)</h3>
+            <p>Descripción: Junto a un compañero, creamos una API RESTful para una web de gestión de tareas. Utilizamos Spring Boot, Hibernate, MySQL y más tecnologías.</p>
+            <div class="tech-icons">
+                <img src="spring-icon.png" alt="Spring">
+                <img src="java-icon.png" alt="Java">
+                <img src="mysql-icon.png" alt="MySQL">
+            </div>
+        </div>
 
-    <div class="proyecto">
-        <h3>Gestión de Documentos en Java</h3>
-        <p><strong>Descripción:</strong> Desarrollé una aplicación para gestionar documentos en Java, organizando los datos y almacenándolos en una base de datos con eXist.</p>
-        <p><strong>Tecnologías:</strong> Java, eXist, MySQL</p>
-        <a href="https://github.com/DaniFlay/OrganizacionArchivos" target="_blank">Ver en GitHub</a>
-    </div>
+        <!-- Proyecto 2 -->
+        <div class="proyecto">
+            <h3>Aplicación móvil (Android)</h3>
+            <p>Descripción: Desarrollé una app móvil similar a MyAnimeList, donde los usuarios pueden gestionar sus colecciones de anime y manga. Utilicé Kotlin y Firebase.</p>
+            <div class="tech-icons">
+                <img src="kotlin-icon.png" alt="Kotlin">
+                <img src="firebase-icon.png" alt="Firebase">
+            </div>
+        </div>
 
-    <div class="proyecto">
-        <h3>Hibernate y eXist</h3>
-        <p><strong>Descripción:</strong> Otro de los proyectos realizados para una base de datos, utilizando Hibernate, y eXist.</p>
-        <p><strong>Tecnologías:</strong> Java, Hibernate, eXist, HQL</p>
-        <a href="https://github.com/DaniFlay/HibernateYeXist" target="_blank">Ver en GitHub</a>
-    </div>
+        <!-- Proyecto 3 -->
+        <div class="proyecto">
+            <h3>Aplicación web con Django (Full Stack)</h3>
+            <p>Descripción: Una plataforma para gestionar tareas y proyectos en equipo. Desarrollada con Django en el backend y React en el frontend.</p>
+            <div class="tech-icons">
+                <img src="django-icon.png" alt="Django">
+                <img src="react-icon.png" alt="React">
+                <img src="python-icon.png" alt="Python">
+            </div>
+        </div>
 
-    <!-- Proyecto Grande 1: Aplicación Android -->
-    <div class="proyecto">
-        <h3>Aplicación Android Similar a MyAnimeList</h3>
-        <p><strong>Descripción:</strong> Desarrollé una aplicación Android para gestionar colecciones de anime, similar a MyAnimeList. Los usuarios pueden añadir series, realizar seguimientos y ver detalles de cada una. El sistema permite la sincronización con bases de datos para almacenar las preferencias del usuario. También permite buscar las obras y conocer obras nuevas con un buscador, y existen foros donde los usuarios pueden dar su opinión y debatir sobre las obras con la comunidad</p>
-        <p><strong>Tecnologías:</strong> Java, Android SDK, Firebase</p>
-        <a href="https://github.com/DaniFlay/Animanga_Universe" target="_blank">Ver en GitHub</a>
-    </div>
+        <!-- Más proyectos pueden añadirse aquí -->
+    </section>
 
-    <!-- Proyecto Grande 2: Proyecto Web con Python, Django y JavaScript -->
-    <div class="proyecto">
-        <h3>Proyecto Web Grande con Django</h3>
-        <p><strong>Descripción:</strong> Desarrollé una plataforma web para gestionar información específica, utilizando Python y Django en el backend, y JavaScript en el frontend. Este proyecto es similar a MyAnimeList o MyAnimePlanet, las versiones web. Los usuarios pueden hacer un seguimiento de las obras, y utilizar un buscador para todos los tipos de búsqueda</p>
-        <p><strong>Tecnologías:</strong> Python, Django, JavaScript, HTML, CSS, MySQL</p>
-        <a href="https://github.com/DaniFlay/FinalWebProject" target="_blank">Ver en GitHub</a>
-    </div>
+    <!-- Sección de CV -->
+    <section class="section-card" id="cv">
+        <h2>Mi CV</h2>
+        <a href="cv.pdf" target="_blank">Descargar CV</a>
+    </section>
 
-</section>
-
-
-    <!-- Habilidades -->
-    <section id="habilidades">
+    <!-- Sección de Habilidades -->
+    <section class="section-card" id="habilidades">
         <h2>Habilidades Técnicas</h2>
-        <p><strong>Lenguajes:</strong> Java, Python, JavaScript</p>
-        <p><strong>Frameworks:</strong> Spring, Hibernate, Django</p>
-        <p><strong>Bases de datos:</strong> MySQL, SQLite, HQL</p>
-        <p><strong>Herramientas:</strong> Git, Android Studio, Postman</p>
+        
+        <!-- Backend -->
+        <div class="habilidad">
+            <img src="backend-icon.png" alt="Backend">
+            <p>Backend</p>
+        </div>
+        
+        <!-- Frontend -->
+        <div class="habilidad">
+            <img src="frontend-icon.png" alt="Frontend">
+            <p>Frontend</p>
+        </div>
+        
+        <!-- Bases de Datos -->
+        <div class="habilidad">
+            <img src="db-icon.png" alt="Bases de Datos">
+            <p>Bases de Datos</p>
+        </div>
+        
+        <!-- Frameworks -->
+        <div class="habilidad">
+            <img src="frameworks-icon.png" alt="Frameworks">
+            <p>Frameworks</p>
+        </div>
 
-        <h2>Habilidades Blandas</h2>
-        <p>Soy una persona persistente y comprometida con mis objetivos. Siempre que me propongo algo, lo consigo, y soy capaz de trabajar de forma autónoma y en equipo, priorizando siempre el trabajo.</p>
+        <!-- Más habilidades pueden añadirse aquí -->
     </section>
 
-    <!-- Cursos y Certificaciones -->
-    <section id="cursos">
-        <h2>Cursos y Certificaciones</h2>
-        <ul>
-            <li><a href="https://courses.edx.org/certificates/a97b2d5b925142fcb5187a413bccbaad" target="_blank">CS50 Introduction to Computer Science</a></li>
-            <li><a href="https://courses.edx.org/certificates/4a8a61263b66428fade8ded9a6fe7d91?_gl=1*1kdvazl*_gcl_au*MTUzNjEzMTczMy4xNzI1Mzc5Mjcy*_ga*MTU1MzUxNzM5MS4xNzE3NTk4NDU2*_ga_D3KS4KMDT0*MTcyNTg4NTg5OS41My4xLjE3MjU4ODYwNzQuNjAuMC4w" target="_blank">CS50 Web Programming with Python y JavaScript</a></li>
-            <li><a href="https://certificates.cs50.io/0b69b8ad-99a5-4d17-a267-2090519a6fba.pdf?size=letter" target="_blank">CS50 Introduction to Databases with SQL</a></li>
-            <li><a href="https://certificates.cs50.io/e554acc3-23eb-43fb-a48b-85db557f60af.pdf?size=letter" target="_blank">CS50 Introduction to Artificial Intelligence with Python</a></li>
-            <li><a href="https://www.netacad.com/certificates?issuanceId=7178673d-05e2-42a6-9c2d-6f3894116a94" target="_blank">Cisco's Introduction to Cybersecurity</a></li>
-        </ul>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p><strong>Email:</strong> <a href="mailto:superdemix97@gmail.com.com">superdemix97@gmail.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/DaniFlay" target="_blank">TuGitHub</a></p>
-        <p><strong>LinkedIn:</strong> <a href=https://www.linkedin.com/in/daniel-seregin-kozlov-062288204/" target="_blank">TuLinkedIn</a></p>
-        <p><strong>Ubicación:</strong> Valladolid, España (Disponible para trabajo remoto o presencial)</p>
-    </section>
-
+    <!-- Script para el modo oscuro y la animación de las placas -->
+    <script src="script.js"></script>
 </body>
 </html>
