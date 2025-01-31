@@ -21,3 +21,97 @@ header nav ul li a {
     color: #3498db;
     text-decoration: none;
 }
+
+#proyectos {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#proyectos h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.proyecto {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.proyecto h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.proyecto p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.proyecto img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 10px;
+}
+
+#habilidades {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#habilidades h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.categoria {
+    margin-bottom: 20px;
+}
+
+.categoria h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+}
+
+.categoria ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categoria ul li {
+    font-size: 1rem;
+    color: #555;
+}
+
+#contacto {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#contacto h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#contacto ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contacto ul li {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+#contacto ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#contacto ul li a:hover {
+    text-decoration: underline;
+}
