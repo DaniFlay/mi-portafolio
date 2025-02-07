@@ -47,9 +47,9 @@ async function loadTranslations(lang) {
         var downloadCv = document.getElementById("downloadCv");
         langToggle.textContent = lang === "es" ? "EN" : "ES";
         localStorage.setItem("lang", lang);
-        cv.src = lang === "es" ? "pdfs/CV_DanielSereginKozlov.pdf" : "pdfs/CV_English.pdf";
-        downloadCv.href = lang === "es" ? "pdfs/CV_DanielSereginKozlov.pdf" : "pdfs/CV_English.pdf";
-        downloadCv.download = lang === "es" ? "CV_DanielSereginKozlov.pdf" : "CV_English.pdf";
+        cv.src = lang === "es" ? "pdfs/CV_Castellano.pdf" : "pdfs/CV_English.pdf";
+        downloadCv.href = lang === "es" ? "pdfs/CV_Castellano.pdf" : "pdfs/CV_English.pdf";
+        downloadCv.download = lang === "es" ? "CV_Castellano.pdf" : "CV_English.pdf";
         updateDarkModeText();
     } catch (error) {
         console.error("Error loading translations:", error);
