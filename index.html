@@ -7,128 +7,245 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Menú de navegación -->
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#cv">Mi CV</a>
-    </nav>
-
-    <!-- Botón de modo oscuro -->
-    <button id="dark-mode-toggle">Modo Oscuro</button>
+    <header> 
+        <nav>
+        <a data-key="home" href="#inicio">Inicio</a>
+        <a data-key="projects" href="#proyectos">Proyectos</a>
+        <a data-key="cv" href="#cv">Mi CV</a>
+        <a data-key="skills" href="#habilidades">Habilidades</a>
+        <a data-key="contact" href="#contacto">Contacto</a>
+        <a data-key="certificates" href="#certifications">Certificaciones</a>
+        <button id="dark-mode-toggle">
+            <span data-key="dark" id="dark-mode-icon">Oscuro 🌙</span>
+        </button>
+        <button id="lang-toggle">
+            <span data-key="lan" id="dark-mode-icon">EN</span>
+        </button>
+        
+    </nav>    
+    </header>
+    
 
     <!-- Sección de Introducción -->
     <section class="section-card" id="inicio">
-        <h1>Bienvenido a mi portafolio</h1>
-        <p>Soy un desarrollador autónomo con pasión por aprender y mejorar mis habilidades. Actualmente trabajo en Yntegra2 como desarrollador Java.</p>
-        <img src="mi-foto.jpg" alt="Foto de presentación">
+        <div class="intro-container">
+            <div><img class="profile-image" src="images/profile.jpeg" alt="Foto de presentación"></div>
+            <div class="intro-text">
+                <h1 data-key="welcome">Bienvenido a mi portafolio</h1>
+                <p data-key="intro">¡Hola! Soy Daniel Seregin Kozlov.
+    
+                Durante la carrera de <span>Comercio</span>, aunque inicialmente no sabía exactamente a qué quería dedicarme, fue allí cuando descubrí mi verdadera pasión: la programación. Al darme cuenta de que era lo que realmente me motivaba, decidí terminar mi carrera en Comercio y luego estudiar el Desarrollo de Aplicaciones Multiplataforma, donde logré una mención honorífica por mi trabajo de fin de grado.
+                
+                Mi lenguaje principal es Java, pero también tengo experiencia con Python y JavaScript, gracias a cursos y autoaprendizaje. Además, he trabajado con Spring y Django, lo que me permite crear aplicaciones tanto en el backend como en el frontend.
+                
+                Mi motivación es seguir aprendiendo y enfrentarme a nuevos desafíos que me permitan crecer como programador. Me encanta resolver problemas reales mediante soluciones eficientes y escalables. Siempre busco mejorar mis habilidades y explorar nuevas tecnologías que me ayuden a llevar mis proyectos al siguiente nivel.
+                
+                Además, tengo la suerte de hablar ruso como lengua materna, inglés con un nivel avanzado y español de manera fluida, lo que me permite trabajar y comunicarme en diferentes entornos internacionales.
+                
+                Estoy muy motivado para seguir desarrollándome como programador y contribuir a proyectos que marquen una diferencia.</p>
+            </div>
+        </div>
     </section>
-
+    
     <!-- Sección de Proyectos -->
     <section class="section-card" id="proyectos">
-        <h2>Proyectos</h2>
+        <h2 data-key="projects">Proyectos</h2>
 
         <!-- Proyecto 1 -->
         <div class="proyecto">
-            <h3>API para una web con Spring (Backend)</h3>
-            <p>Descripción: Junto a un compañero, creamos una API RESTful para una web de gestión de tareas. Utilizamos Spring Boot, Hibernate, MySQL y más tecnologías.</p>
+            <h3 data-key="project1">API para una web con Spring</h3>
+            <p data-key="p1info">Junto a un compañero, creamos una web para una ONG, mi parte del proyecto fue el backend, la creación de la API.</p>
+            <div><button data-key="viewCode" onclick="location.href='https://github.com/DaniFlay/ONG'" class="verCodigo">Ver código<img src="images/github.png"></button></div>
+            <div class="habilidades"><h4 data-key="skills">Habilidades:</h4>
             <div class="tech-icons">
-                <img src="spring-icon.png" alt="Spring">
-                <img src="java-icon.png" alt="Java">
-                <img src="mysql-icon.png" alt="MySQL">
-            </div>
+                <div><p>Spring</p><img src="images/spring.png" alt="Spring" class="icon"></div>
+                <div><p>Java</p><img src="images/java.png" alt="Java" class="icon"></div>
+                <div><p>MySQL</p><img src="images/mysql.png" alt="MySQL" class="icon"></div>
+            </div></div>
         </div>
 
         <!-- Proyecto 2 -->
         <div class="proyecto">
-            <h3>Aplicación móvil (Android)</h3>
-            <p>Descripción: Desarrollé una app móvil similar a MyAnimeList, donde los usuarios pueden gestionar sus colecciones de anime y manga. Utilicé Kotlin y Firebase.</p>
+            <h3 data-key="project2">Animanga Universe (Android)</h3>
+            <p data-key="p2info">El trabajo del fin de grado del grado superior, una alternativa a aplicaciones como MyAnimeList y MyAnimePlanet</p>
+            <div><button data-key="viewCode" onclick="location.href='https://github.com/DaniFlay/Animanga_Universe'" class="verCodigo">Ver código<img src="images/github.png"></button></div>
+            <div class="habilidades"><h4 data-key="skills">Habilidades:</h4>
             <div class="tech-icons">
-                <img src="kotlin-icon.png" alt="Kotlin">
-                <img src="firebase-icon.png" alt="Firebase">
-            </div>
+                <div><p>Java</p><img src="images/java.png" alt="Java" class="icon"></div>
+                <div><p>FireBase</p><img src="images/firebase.png" alt="Firebase" class="icon"></div>
+                <div><p>Android Studio</p><img src="images/android.png" alt="Android" class="icon"></div>
+                <div><p>SQLite</p><img src="images/sqlite.png" alt="SQLite" class="icon"></div>
+            </div></div>
         </div>
 
         <!-- Proyecto 3 -->
         <div class="proyecto">
-            <h3>Aplicación web con Django (Full Stack)</h3>
-            <p>Descripción: Una plataforma para gestionar tareas y proyectos en equipo. Desarrollada con Django en el backend y React en el frontend.</p>
+            <h3 data-key="project3">Aplicación web con Django</h3>
+            <p data-key="p3info">Proyecto final de un curso ofrecido por la universidad de Harvard de programación web con Python y JavaScript</p>
+            <div><button data-key="viewCode" onclick="location.href='https://github.com/DaniFlay/FinalWebProject'" class="verCodigo">Ver código<img src="images/github.png"></button></div>
+            <div class="habilidades"><h4 data-key="skills">Habilidades:</h4>
             <div class="tech-icons">
-                <img src="django-icon.png" alt="Django">
-                <img src="react-icon.png" alt="React">
-                <img src="python-icon.png" alt="Python">
-            </div>
+                <div><p>Django</p><img src="images/django-icon.svg" alt="Django" class="icon"></div>
+                <div><p>Python</p><img src="images/python.jpg" alt="Python" class="icon"></div>
+                <div><p>MySQL</p><img src="images/mysql.png" alt="MySQL" class="icon"></div>
+                <div><p>HTML</p><img src="images/html.png" alt="HTML" class="icon"></div>
+                <div><p>CSS</p><img src="images/css.png" alt="CSS" class="icon"></div>
+                <div><p>JavaScript</p><img src="images/js.png" alt="JS" class="icon"></div>
+            </div></div>
         </div>
 
-        <!-- Más proyectos pueden añadirse aquí -->
+        <!-- Proyecto 4 -->
+        <div class="proyecto">
+            <h3 data-key="project4">Proyecto SQL</h3>
+            <p data-key="p4info">Proyecto final de bases de datos, para la creación de una base de datos completa de un centro de ciclos formativos</p>
+            <div><button data-key="viewCode" onclick="location.href='https://github.com/DaniFlay/SQLColegio'" class="verCodigo">Ver código<img src="images/github.png"></button></div>
+            <div class="habilidades"><h4 data-key="skills">Habilidades:</h4>
+            <div class="tech-icons">
+                <div><p>MySQL</p><img src="images/mysql.png" alt="MySQL" class="icon"></div>
+                <div><p>MySQL Workbench</p><img src="images/workbench.png" alt="MySQL Workbench" class="icon"></div>
+            </div></div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="proyecto">
+            <h3 data-key="project5">Organización de archivos</h3>
+            <p data-key="p5info">Programa que organiza los archivos de una forma determinada, a la vez trabajando con una base de datos.</p>
+            <div><button data-key="viewCode" onclick="location.href='https://github.com/DaniFlay/OrganizacionArchivos'" class="verCodigo">Ver código<img src="images/github.png"></button></div>
+            <div class="habilidades"><h4 data-key="skills">Habilidades:</h4>
+            <div class="tech-icons">
+                <div><p>MySQL</p><img src="images/mysql.png" alt="MySQL" class="icon"></div>
+                <div><p>Java</p><img src="images/java.png" alt="Java" class="icon"></div>
+                <div><p>Eclipse</p><img src="images/eclipse.jpg" alt="Eclipse" class="icon"></div>
+            </div></div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="proyecto">
+            <h3 data-key="project6">Más proyectos</h3>
+            <p data-key="p6info">Trabajando en proyectos nuevos y mejorando continuamente.</p>
+            <div><button data-key="viewCode" onclick="location.href='https://github.com/DaniFlay'" class="verCodigo">Ver código<img src="images/github.png"></button></div>
+            <div class="habilidades"><h4 data-key="skills">Habilidades:</h4>
+            <div class="tech-icons">
+                <div><p>Hibernate</p><img src="images/hibernate.png" alt="Hibernate" class="icon"></div>
+                <div><p>NetBeans</p><img src="images/netbeans.png" alt="Neatbeans" class="icon"></div>
+                <div><p data-key="more">Más...</p></div>
+            </div></div>
+        </div>
     </section>
 
     <!-- Sección de CV -->
     <section class="section-card" id="cv">
-        <h2>Mi CV</h2>
-        <a href="cv.pdf" target="_blank">Descargar CV</a>
+        <h2 data-key="myCV">Mi CV</h2>
+        <iframe id="cvviewer" src="pdfs/CV_DanielSereginKozlov.pdf" width="100%" height="1500px"></iframe>
+        <a id="downloadCv" href="pdfs/CV_DanielSereginKozlov.pdf" download="CV_DanielSereginKozlov.pdf"><button id="descarga" data-key="downloadCV">Descargar CV</button></a>
     </section>
 
     <!-- Sección de Habilidades -->
     <section class="section-card" id="habilidades">
-        <h2>Habilidades Técnicas</h2>
+        <h2 data-key="skills">Habilidades Técnicas</h2>
         
         <!-- Lenguajes -->
         <div class="habilidad">
-            <p>Lenguajes</p>
-            <img src="java.webp" alt="Java">
-            <img src="python.webp" alt="Python">
-            <img src="js.png" alt="JS">
+            <p data-key="languages">Lenguajes</p>
+            <div> 
+               <div><img src="images/java.png" alt="Java"></div> 
+                <div><img src="images/python.jpg" alt="Python"></div>
+                <div><img src="images/js.png" alt="JS"></div>
+            </div>
+            
         </div>
         
         <!-- Frameworks -->
         <div class="habilidad">
-            <p>Frameworks</p>
-            <img src="spring.png" alt="Spring">
-            <img src="hibernate.png" alt="Hibernate">
-            <img src="django.jpg" alt="Django">
-            
+            <p data-key="frameworks">Frameworks</p>
+            <div>
+            <div><img src="images/spring.png" alt="Spring"></div>
+            <div><img src="images/hibernate.png" alt="Hibernate"></div>
+            <div><img src="images/django-icon.svg" alt="Django"></div>
+            </div>
         </div>
         
         <!-- Bases de Datos -->
         <div class="habilidad">
-            <p>Bases de Datos</p>
-            <img src="hql.webp" alt="HQL">
-            <img src="sqlite.png" alt="SQLite">
-            <img src="mysql.png" alt="MySQL">
-            
+            <p data-key="db">Bases de Datos</p>
+            <div> 
+                <div><img src="images/hsql.png" alt="HQL"></div>
+                <div><img src="images/sqlite.png" alt="SQLite"></div>
+                <div><img src="images/mysql.png" alt="MySQL"></div>
+                <div><img src="images/firebase.png" alt="Firebase"></div>
+            </div>
         </div>
         
         <!-- Herramientas -->
         <div class="habilidad">
-            <p>Herramientas</p>
-            <img src="android.png" alt="Android Studio">
-            <img src="eclipse.jpg" alt="Eclipse">
-            <img src="idea.png" alt="Intellij">
-            <img src="postman.png" alt="Postman">
-            <img src="vs.png" alt="Visual Studio Code">   
+            <p data-key="tools">Herramientas</p>
+            <div> 
+                <div><img src="images/android.png" alt="Android Studio"></div>
+                <div><img src="images/eclipse.jpg" alt="Eclipse"></div>
+                <div><img src="images/idea.png" alt="Intellij"></div>
+                <div><img src="images/postman.png" alt="Postman"></div>
+                <div><img src="images/vs.png" alt="Visual Studio Code"></div>
+                <div><img src="images/netbeans.png" alt="NetBeans"></div>
+            </div>
         </div>
 
         <!-- Control de versiones -->
         <div class="habilidad">
-            <p>Control de Vesiones</p>
-            <img src="git.png" alt="Git">
-            <img src="github.png" alt="GitHub">
-            <img src="gitlab.png" alt="GitLab"> 
+            <p data-key="tools">Control de Vesiones</p>
+            <div> 
+                <div><img src="images/git.png" alt="Git"></div>
+                <div><img src="images/github.png" alt="GitHub"></div>
+                <div><img src="images/gitlab.png" alt="GitLab"></div>
+            </div>
         </div>
 
         <!-- Marcado y estilos -->
         <div class="habilidad">
-            <p>Herramientas</p>
-            <img src="html.jpg" alt="HTML">
-            <img src="css.png" alt="CSS"> 
+            <p data-key="markUp">Marcado y estilos</p>
+            <div> 
+                <div><img src="images/html.png" alt="HTML"></div>
+                <div><img src="images/css.png" alt="CSS"></div>
+            </div>
         </div>
 
         <!-- Más habilidades pueden añadirse aquí -->
     </section>
 
-    <!-- Script para el modo oscuro y la animación de las placas -->
+    <!-- Contactos -->
+    <section class="section-card" id="contacto">
+        <h2 data-key="contact">Contacto</h2>
+        <div><img src="images/mail.png" alt="Mail" class="icon"><p>superdemix97@gmail.com</p></div>
+        <div><img src="images/whastapp.png" alt="WhatsApp" class="icon">+34 601 21 04 40</div>
+        <div><img src="images/linkedin.webp" alt="Linkedin" class="icon"><a href="https://www.linkedin.com/in/daniel-seregin-kozlov-062288204/">Daniel Seregin Kozlov</a></div>
+        <div><img src="images/github.png" alt="GitHub" class="icon"><a href="https://github.com/DaniFlay">DaniFlay</a></div>
+    </section>
+
+    <!-- Certificaciones -->
+    <section class="section-card" id="certifications">
+        <h2 data-key="certificates">Certificaciones</h2>
+            <div class="certification">
+                <h3>CS50 Introduction to Computer Science</h3>
+                <p>Harvard University - <a data-key="seeCertificate" href="https://courses.edx.org/certificates/a97b2d5b925142fcb5187a413bccbaad" target="_blank">Ver Certificado</a></p>
+            </div>
+            <div class="certification">
+                <h3>CS50 Web Programming with Python and JavaScript</h3>
+                <p>Harvard University - <a data-key="seeCertificate" href="https://courses.edx.org/certificates/4a8a61263b66428fade8ded9a6fe7d91?_gl=1*1kdvazl*_gcl_au*MTUzNjEzMTczMy4xNzI1Mzc5Mjcy*_ga*MTU1MzUxNzM5MS4xNzE3NTk4NDU2*_ga_D3KS4KMDT0*MTcyNTg4NTg5OS41My4xLjE3MjU4ODYwNzQuNjAuMC4w" target="_blank">Ver Certificado</a></p>
+            </div>
+            <div class="certification">
+                <h3>CS50 Introduction to Databases with SQL</h3>
+                <p>Harvard University - <a data-key="seeCertificate" href="https://certificates.cs50.io/0b69b8ad-99a5-4d17-a267-2090519a6fba.pdf?size=letter" target="_blank">Ver Certificado</a></p>
+            </div>
+            <div class="certification">
+                <h3>CS50 Introduction to AI with Python</h3>
+                <p>Harvard University - <a data-key="seeCertificate" href="https://certificates.cs50.io/e554acc3-23eb-43fb-a48b-85db557f60af.pdf?size=letter" target="_blank">Ver Certificado</a></p>
+            </div>
+            <div class="certification">
+                <h3>Introduction to Cybersecurity</h3>
+                <p>Cisco Networking Academy - <a data-key="seeCertificate" href="pdfs/_certificate_superdemix97-gmail-com_7178673d-05e2-42a6-9c2d-6f3894116a94.pdf" target="_blank">Ver Certificado</a></p>
+            </div>
+
+    </section>
+    
     <script src="scripts.js"></script>
 </body>
 </html>
